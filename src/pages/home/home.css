@@ -4,7 +4,7 @@
     height: 89vh;
     justify-content: space-between;
     margin-top: 4rem ;
-    background-color: #00224D;
+    background-color: #010A13;
     border:2px solid #00224D;
 }
 .hero-left{
@@ -88,8 +88,9 @@
     background-color: #00224D;
 }
 .btn{
+    text-transform: capitalize;
     position: absolute;
-    right: 3rem; top: 2rem; color:rgb(255, 255, 255);
+    right: 4rem; top: 4rem; color:rgb(255, 255, 255);
     padding: 0.8rem 3.8rem;
     font-size: 1.8rem;
     border-radius: 15%;

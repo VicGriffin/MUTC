@@ -1,5 +1,6 @@
 import "./header.css"
-import "./index.css"
+import {Link} from "react-router-dom"
+// import "./index.css"
 function Header() {
 
     return(
@@ -7,10 +8,17 @@ function Header() {
             <h1 className="headerName">MUTC CLUB</h1>
             <nav>
             <ul className="list">
-                <li className="list1"><a href="#">home</a> </li>
-                <li className="list1"><a href="#">leadership</a> </li>
-                <li className="list1"><a href="#">tracks</a> </li>
-                <li className="list1"><a href="#">events</a> </li>
+                <li className="list1">
+                    <Link to ="/">home</Link> </li>
+                <li className="list1">
+                    <Link to ="/leadership">leaders</Link>
+                </li>
+                <li className="list1">
+                    <Link to ="/events">events</Link>
+                </li>
+                <li className="list1">
+                    <Link to ="/tracks">tracks</Link>
+                </li>
             </ul>
             
             </nav>

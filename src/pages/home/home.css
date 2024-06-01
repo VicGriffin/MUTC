@@ -1,0 +1,139 @@
+.hero{
+    width: 100%;
+    display: flex;
+    height: 89vh;
+    justify-content: space-between;
+    margin-top: 4rem ;
+    background-color: #00224D;
+    border:2px solid #00224D;
+}
+.hero-left{
+    flex:3;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+
+
+}
+
+.ad{
+    margin-top: 4rem;
+    background-color:#00224D;
+    color: #FF204E;
+    border-radius: 4rem;
+    width: fit-content;
+    padding: 20px 13px;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+.ad>span{
+    z-index: 2;
+}
+.ad>div{
+    position: absolute;
+    background-color: #A0153E ;
+    width: 5.4rem;
+    height: 80%;
+    left: 8px;
+    border-radius: 3rem;
+    z-index: 1;
+}
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    text-transform: uppercase;
+    font-size: 4.5rem;
+    font-weight: bold;
+    color:#FF204E;
+    text-overflow: inherit;
+}
+.hero-text>div:nth-last-of-type(1){
+    font-size: 2rem;
+    font-weight: 200;
+    text-transform: none;
+    letter-spacing: 1px;
+    width:80%;
+    color: #A0153E;
+}
+.figures{
+    margin-top: 10rem;
+    display: flex;  
+    justify-content: center; 
+    gap: 2rem;
+}
+.figures>div{
+    display: flex;
+    flex-direction: column;   
+}
+.figures>div>span:nth-of-type(1){
+    color: #ffffff;
+    font-size: 3rem;
+}
+.figures>div>span:nth-of-type(2){
+    color: #FF204E;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+.hero-right{
+    flex:1;
+    position: relative;
+    background-color: #00224D;
+}
+.btn{
+    position: absolute;
+    right: 3rem; top: 2rem; color:rgb(255, 255, 255);
+    padding: 0.8rem 3.8rem;
+    font-size: 1.8rem;
+    border-radius: 15%;
+    background-color: #00224D;
+    cursor:pointer;
+    transition:all 1s;
+    &:after,&:before{
+      content:" ";
+      width:10px;
+      height:10px;
+      position:absolute;
+      border :0px solid #fff;
+      transition:all 1s;
+        }
+        &:after{
+            top:-1px;
+            left:-1px;
+            border-top:5px solid black;
+            border-left:5px solid black;
+          }
+        &:before{
+            bottom:-1px;
+            right:-1px;
+            border-bottom:5px solid black;
+            border-right:5px solid black;
+          }
+    
+          &:hover{
+            border-top-right-radius:0px;
+            border-bottom-left-radius:0px;
+             background:#FF204E;
+             color:white;
+            &:before,&:after{
+              
+              width:100%;
+              height:100%;
+               border-color:rgb(12, 11, 11);
+            }
+          }
+
+}
+.hero_image{
+    position: absolute;
+    top: 8rem;
+    right: 10rem;
+    width: 100%;
+}

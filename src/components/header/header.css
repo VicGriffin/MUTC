@@ -1,15 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Heebo&family=Major+Mono+Display&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Heebo&family=Major+Mono+Display&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Mono+One&display=swap');
+
 .header{
-    height: 12vh;
+    width: 100%;
+    height: auto;
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
     font-family: "Major Mono Display", monospace;
     background-color: #00224D;
+    padding: 20px 0px;
     color: #FF204E;
     font-size: 2rem;
+    justify-content: space-between;
+    
 }
 .list{
     display: flex;
@@ -22,14 +27,24 @@
 }
 .list a{
     padding: 2rem;
-    border-radius: 10%;
+    border-radius: 5%;
     list-style: none;
     text-decoration: none;
-    color: #fff;
+    color:  #FF204E;
 
 }
 a:hover{
     background-color: #A0153E;
-    color: #5D0E41;
+    color: #000000;
     cursor: pointer;
+}
+@media screen and(max-width: 51.0625em){
+    .header{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        
+}
+    
 }

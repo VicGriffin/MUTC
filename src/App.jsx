@@ -1,7 +1,7 @@
 // import { useState } from 'react'
 import './App.css'
 import Header from "./components/header/Header.jsx"
-import Footer from "./components/footer/Footer.jsx"
+// import Footer from "./components/footer/Footer.jsx"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Home from "./pages/home/Home.jsx"
 import Leadership from "./pages/leadership/Leadership.jsx"
@@ -21,7 +21,7 @@ function App() {
       <Route path="/events" element={<Events/>} />
     </Routes>
       
-      <Footer/>
+      {/* <Footer/> */}
     </BrowserRouter>
     </>
   )

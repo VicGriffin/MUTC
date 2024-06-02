@@ -1,6 +1,6 @@
 import "./header.css"
 import {Link} from "react-router-dom"
-// import "./index.css"
+
 function Header() {
 
     return(
@@ -22,7 +22,7 @@ function Header() {
             </ul>
             
             </nav>
-            {/* <hr/> */}
+            
         </div>
         );
     

@@ -22,15 +22,7 @@
     position: relative;
     flex-direction: column;
 }
-.timeline-items::before{
- 
-    content: '';
-    position: absolute;
-    width: 5px;
-    height: 100%;
-    background-color:  #FF204E;
-    left: calc(50% - 1px);
-}
+
 .timeline-item{
     margin-bottom: 40px;
     width: 100%;

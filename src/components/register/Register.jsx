@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import '../register/register.css';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import "../register/register.css";
 
 const Register = () => {
   const [formData, setFormData] = useState({
@@ -27,7 +27,7 @@ const Register = () => {
   return (
     <div className="form-container">
       <form onSubmit={handleSubmit}>
-        <h2>Registration Form</h2>
+        <h2 className='heading2'>Registration Form</h2>
         <div className="form-group">
           <label htmlFor="fullName">Full Name</label>
           <input

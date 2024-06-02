@@ -7,9 +7,12 @@
 .events{
     padding: 100px 15px;
     background-color: #010A13 ;
+    margin-top: 2rem;
 }
 .events h2{
-    margin-bottom: 5rem;
+    margin-top: -2rem;
+    display: grid;
+    place-content: center;
 }
 .timeline-items{
     max-width: 1200px;
@@ -86,7 +89,7 @@
     line-height: 22px;   
 }
 ::-webkit-scrollbar{
-    width: 15px;
+    width: 8px;
 }
 ::-webkit-scrollbar-thumb{
     background-color: #FF204E;

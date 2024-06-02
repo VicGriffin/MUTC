@@ -7,6 +7,7 @@ import Home from './pages/home/Home.jsx'
 import Leadership from './pages/leadership/Leadership.jsx'
 import Tracks from './pages/tracks/Tracks.jsx'
 import Events from './pages/events/Events.jsx'
+import Register from './components/register/Register.jsx'
 function App() {
   // const [count, setCount] = useState(0)
 

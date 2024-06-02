@@ -1,0 +1,54 @@
+.tracks1{
+    background-color: #010A13 ;
+    margin-top: 2px;
+}
+.tracks{
+    
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2.5rem;
+    
+
+}
+.tracks h2{
+    margin-bottom: 5rem;
+    color:#FF204E;
+
+}
+
+.tracks-box{
+    background-color: #FF204E ;
+    height: 300px;
+    border-radius: 3rem;
+    border: 5px solid transparent;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+.tracks-box:hover{
+    background: #010A13;
+    color: #FF204E;
+    border: 5px solid #FF204E ;
+    transform: scale(1.03);
+}
+.track-box .tracks-info{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-height: 200px;
+    justify-content: left;
+    align-items: baseline;
+    padding: 5rem 5rem;
+}
+.track-info h4{
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 2;    
+}
+.track-info p{
+    font-size: 1.6rem;
+    font-weight: 600;
+    max-height: 100px;
+    line-height: 1.7;
+    margin: auto;
+}

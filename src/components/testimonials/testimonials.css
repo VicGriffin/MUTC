@@ -1,14 +1,14 @@
 
 .testimonials-container {
     width: 100%;
-    margin-top: 2rem;
+    margin-top: 1.2rem;
     text-align: center;
     padding: 50px 0;
     background-color:#010A13;
 }
 
 .testimonials-container h2 {
-    font-size: 3rem;
+    font-size: 2rem;
     margin-bottom: 20px;
     color:#FF204E;
 }
@@ -35,13 +35,13 @@
 }
 
 .testimonial-text {
-    font-size: 2rem;
+    font-size: 1.2rem;
     margin-bottom: 10px;
     color:#010A13;
 }
 
 .testimonial-name {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: bold;
     color:#010A13;
 }

@@ -19,12 +19,7 @@
     margin-bottom: 5rem;
     color: #FF204E;
 }
-.tracks-container{
-    display: flex;
-    flex-wrap: 
 
-    width: fit-content;
-}
 
 .tracks-box {
     background-color: #FF204E;
@@ -53,14 +48,14 @@
 }
 
 .track-info h4 {
-    font-size: 3rem;
-    font-weight: 800;
+    font-size: 1.5rem;
+    font-weight: 400;
     line-height: 2;
 }
 
 .track-info p {
-    font-size: 1.6rem;
-    font-weight: 600;
+    font-size: 0.8rem;
+    font-weight: 300;
     max-height: 100px;
     line-height: 1.7;
     margin: auto;

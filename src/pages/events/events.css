@@ -23,7 +23,7 @@
     flex-direction: column;
 }
 .timeline-items::before{
-    margin-left: 50%;
+ 
     content: '';
     position: absolute;
     width: 5px;

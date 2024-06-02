@@ -29,7 +29,7 @@
     width: 5px;
     height: 100%;
     background-color:  #FF204E;
-    left: calc(50%-1px);
+    left: calc(50% - 1px);
 }
 .timeline-item{
     margin-bottom: 40px;

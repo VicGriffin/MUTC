@@ -38,7 +38,7 @@ const Hero = () => {
                 <button className='btn'>join us</button>
 
                 <div className="visualiser">
-                    <img src={hero_img} alt='' className='hero_image'/>
+                    {/* <img src={hero_img} alt='' className='hero_image'/> */}
                     {/* <img src={herot_img} alt=''className='hero_image'/> */}
                 </div>
             </div>

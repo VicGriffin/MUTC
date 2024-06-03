@@ -26,8 +26,8 @@ const Testimonials = () => {
         <div className="testimonials-container">
             <h2>TESTIMONIALS</h2>
             <Swiper
-                spaceBetween={50}
-                slidesPerView={1}
+                spaceBetween={10}
+                slidesPerView={2}
                 loop={true}
                 pagination={{ clickable: true }}
             >

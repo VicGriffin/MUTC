@@ -12,7 +12,7 @@
     background-color: #010A13;
     padding: 20px 0px;
     color: #FF204E;
-    font-size: 1.2rem;
+    font-size: 1rem;
     justify-content: space-between;
     
 }
@@ -26,7 +26,7 @@
    
 }
 .list a{
-    padding: 1.2rem;
+    padding: 1rem;
     border-radius: 5%;
     list-style: none;
     text-decoration: none;

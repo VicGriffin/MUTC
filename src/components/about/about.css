@@ -5,6 +5,7 @@
 }
 .aboutme{
     background-color: #010a13 ;
+    margin-top: -4rem;
 }
 .heading{
     width: 90%;
@@ -16,6 +17,7 @@
     margin: 20px auto;
 }
 .heading h1{
+    margin-top: 2rem;
     font-size: 50px;
     color: #FF204E;
     margin-bottom: 25px;

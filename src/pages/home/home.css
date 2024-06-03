@@ -3,7 +3,7 @@
     display: flex;
     height: 89vh;
     justify-content: space-between;
-    margin-top: 2rem ;
+    margin-top: 1px ;
     background-color: #010A13;
     border:2px solid #00224D;
 }
@@ -17,7 +17,7 @@
 }
 
 .ad{
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
     background-color:#00224D;
     color: #FF204E;
     border-radius: 4rem;
@@ -91,7 +91,7 @@
     position: absolute;
     right: 1rem; top: 1rem; color:rgb(0, 0, 0);
     padding: 0.8rem;
-    font-size: 1.8rem;
+    font-size: 1rem;
     border-radius: 15%;
     background-color: #00224D;
     cursor:pointer;

@@ -63,6 +63,7 @@
     color: #A0153E;
 }
 .figures{
+    margin-top: 4rem;
     display: flex;  
     justify-content: center; 
     gap: 2rem;

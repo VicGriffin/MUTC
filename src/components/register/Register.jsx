@@ -26,8 +26,8 @@ const Register = () => {
 
   return (
     <div className="form-container">
-      <form onSubmit={handleSubmit}>
-        <h2 className='heading2'>Registration Form</h2>
+      <form onSubmit={handleSubmit} className="form-card">
+        <h2 className="heading2">Registration Form</h2>
         <div className="form-group">
           <label htmlFor="fullName">Full Name</label>
           <input
@@ -75,22 +75,22 @@ const Register = () => {
         <div className="form-group">
           <label htmlFor="track">Desired Course</label>
           <select
-            id="course"
-            name="course"
-            value={formData.course}
+            id="track"
+            name="track"
+            value={formData.track}
             onChange={handleChange}
             required
           >
-            <option value="">select course</option>
-            <option value="course">Cyber Security</option>
-            <option value="course">UI/UX design</option>
-            <option value="course">Web development</option>
-            <option value="course">Mobile apps development </option>
-            <option value="course">Cloud engineering</option>
-            <option value="course">Power Platform</option>
+            <option value="">Select course</option>
+            <option value="Cyber Security">Cyber Security</option>
+            <option value="UI/UX design">UI/UX design</option>
+            <option value="Web development">Web development</option>
+            <option value="Mobile apps development">Mobile apps development</option>
+            <option value="Cloud engineering">Cloud engineering</option>
+            <option value="Power Platform">Power Platform</option>
           </select>
         </div>
-        <button type="submit">Register</button>
+        <button type="submit" className="register-button">Register</button>
       </form>
     </div>
   );

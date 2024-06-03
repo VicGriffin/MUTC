@@ -1,54 +1,66 @@
 .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     background-color: #010A13;
-    color: #FF204E;
-    padding: 2rem;
-    border-radius: 1rem;
-    max-width: 400px;
-    margin: 2rem auto;
   }
   
-h2 {
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 2rem;
-
-}
-  
-.form-group {
-    margin-bottom: 1.5rem;
-}
-  
-label {
-    font-size: 0.8rem;
-    font-weight: 100;
-    display: block;
-    margin-bottom: 0.5rem;
-    color: #FF204E;
-}
-  
-input, select {
-    font-size: 1rem;
-    font-weight: 100;
-    width: 100%;
-    padding: 1rem;
-    border: 2px solid #FF204E;
-    border-radius: 0.5rem;
+  .form-card {
     background-color: #010A13;
     color: #FF204E;
-}
-  
-button {
-    width: 100%;
     padding: 2rem;
-    border: none;
-    border-radius: 0.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+  }
+  
+  .heading2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #FF204E;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #FF204E;
+  }
+  
+  .form-group input:focus,
+  .form-group select:focus {
+    outline: none;
+    border-color: #FF204E;
+    box-shadow: 0 0 5px rgba(255, 32, 78, 0.5);
+  }
+  
+  .register-button {
+    width: 100%;
+    padding: 0.75rem;
     background-color: #FF204E;
     color: #010A13;
+    border: none;
+    border-radius: 5px;
     font-size: 1rem;
     cursor: pointer;
-}
+    transition: background-color 0.3s ease;
+  }
   
-button:hover {
-    background-color: #ff405e;
-}
+  .register-button:hover {
+    background-color: #e61e43;
+  }
   

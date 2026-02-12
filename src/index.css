@@ -1,4 +1,6 @@
-:root{
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap');
+
+:root {
     --primary-color: #0F172A;
     --secondary-color: #1E293B;
     --accent-color: #FF204E;
@@ -8,4 +10,68 @@
     --border-color: #334155;
     --success: #10B981;
     --glow: rgba(255, 32, 78, 0.3);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--primary-color);
+    color: var(--text-primary);
+    font-family: 'Heebo', sans-serif;
+    overflow-x: hidden;
+    min-height: 100vh;
+    width: 100%;
+}
+
+#root {
+    width: 100%;
+    min-height: 100vh;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes pulse-glow {
+    0%, 100% {
+        box-shadow: 0 0 20px rgba(255, 32, 78, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 40px rgba(255, 32, 78, 0.5);
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
 }

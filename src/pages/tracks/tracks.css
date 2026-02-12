@@ -1,61 +1,172 @@
 
 .tracks1 {
-    background-color: #010A13;
-    margin-top: -5rem;
-    
+    background: linear-gradient(180deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    padding: 5rem 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.tracks1::before {
+    content: '';
+    position: absolute;
+    bottom: -300px;
+    left: -200px;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(16, 185, 129, 0.1) 0%, transparent 70%);
+    animation: float 8s ease-in-out infinite;
+    z-index: 0;
+}
+
+.heading {
+    font-size: 3rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--accent-color), var(--accent-light));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 4rem;
+    position: relative;
+    z-index: 1;
+    animation: fadeInUp 0.8s ease-out;
+    text-align: center;
 }
 
 .tracks {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    z-index: 1;
+    position: relative;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
-.tracks h2 {
-    margin-bottom: 5rem;
-    color: #FF204E;
+.tracks-container {
+    animation: fadeInUp 0.8s ease-out forwards;
 }
 
+.tracks-container:nth-child(1) { animation-delay: 0.1s; }
+.tracks-container:nth-child(2) { animation-delay: 0.2s; }
+.tracks-container:nth-child(3) { animation-delay: 0.3s; }
+.tracks-container:nth-child(4) { animation-delay: 0.4s; }
+.tracks-container:nth-child(5) { animation-delay: 0.5s; }
+.tracks-container:nth-child(6) { animation-delay: 0.6s; }
 
 .tracks-box {
-    background-color: #FF204E;
-    width: 100%;
-    height: auto;
-    border-radius: 3rem;
+    background: linear-gradient(135deg, var(--secondary-color) 0%, rgba(30, 41, 59, 0.6) 100%);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
     overflow: hidden;
-    border: 5px solid transparent;
+    padding: 2rem;
     cursor: pointer;
-    transition: 0.4s ease-in-out;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tracks-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 32, 78, 0.2), transparent);
+    transition: left 0.6s ease;
+    z-index: 0;
+}
+
+.tracks-box::after {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    border-radius: 16px;
+    padding: 2px;
+    background: linear-gradient(135deg, var(--accent-color), var(--accent-light));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: -1;
 }
 
 .tracks-box:hover {
-    background: #010A13;
-    color: #FF204E;
-    border: 5px solid #FF204E;
-    transform: scale(1.03);
+    transform: translateY(-8px);
+    background: linear-gradient(135deg, rgba(255, 32, 78, 0.1), rgba(30, 41, 59, 0.8));
+    border-color: var(--accent-color);
+    box-shadow: 0 20px 50px rgba(255, 32, 78, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
-.tracks-box .track-info {
+.tracks-box:hover::before {
+    left: 100%;
+}
+
+.tracks-box:hover::after {
+    opacity: 1;
+}
+
+.tracks-box:hover .track-info h4 {
+    color: var(--accent-color);
+}
+
+.track-info {
     display: flex;
     flex-direction: column;
-    text-align: left;
-    max-height: 350px;
-    justify-content: left;
-    align-items: baseline;
-    padding: 1rem 1rem;
+    gap: 1rem;
+    z-index: 1;
+    position: relative;
 }
 
 .track-info h4 {
     font-size: 1.5rem;
-    font-weight: 200;
-    line-height: 2;
+    font-weight: 700;
+    color: var(--text-primary);
+    transition: color 0.3s ease;
+    margin: 0;
+    letter-spacing: -0.01em;
 }
 
-.track-info p {
-    font-size: 0.8rem;
-    font-weight: 100;
-    max-height: 350px;
-    line-height: 1.3;
-    margin: auto;
+.track-info .card-preview {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    margin: 0;
+    transition: color 0.3s ease;
+}
+
+.tracks-box:hover .track-info .card-preview {
+    color: var(--text-primary);
+}
+
+@media screen and (max-width: 768px) {
+    .tracks1 {
+        padding: 3rem 1.5rem;
+    }
+
+    .heading {
+        font-size: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .tracks {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .tracks-box {
+        padding: 1.5rem;
+    }
+
+    .track-info h4 {
+        font-size: 1.2rem;
+    }
+
+    .track-info .card-preview {
+        font-size: 0.9rem;
+    }
 }

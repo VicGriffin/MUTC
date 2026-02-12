@@ -1,7 +1,11 @@
 :root{
-    --primary-color:var(#00224D);
-    --secondary-color:var(#5D0E41);
-    --tertiary-color:var(#A0153E);
-    --secondt-color:var(#FF204E);
-    
+    --primary-color: #0F172A;
+    --secondary-color: #1E293B;
+    --accent-color: #FF204E;
+    --accent-light: #FF5A7F;
+    --text-primary: #FFFFFF;
+    --text-secondary: #CBD5E1;
+    --border-color: #334155;
+    --success: #10B981;
+    --glow: rgba(255, 32, 78, 0.3);
 }

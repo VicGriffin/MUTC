@@ -1,50 +1,114 @@
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Heebo&family=Major+Mono+Display&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Heebo&family=Major+Mono+Display&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Mono+One&display=swap');
-
-.header{
+.header {
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-family: "Major Mono Display", monospace;
-    background-color: #010A13;
-    padding: 20px 0px;
-    color: #FF204E;
-    font-size: 1rem;
     justify-content: space-between;
-    
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    padding: 1.5rem 4rem;
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(10px);
+    background-color: rgba(15, 23, 42, 0.95);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    animation: slideDown 0.6s ease-out;
 }
-.list{
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.headerName {
+    font-family: 'Space Mono', monospace;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--accent-color), var(--accent-light));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.headerName:hover {
+    transform: scale(1.05);
+}
+
+.list {
     display: flex;
     flex-direction: row;
-    gap: 3rem;    
+    gap: 2rem;
     list-style: none;
-    text-align: center;
-    text-decoration: none;
-   
+    align-items: center;
 }
-.list a{
-    padding: 1rem;
-    border-radius: 5%;
-    list-style: none;
-    text-decoration: none;
-    color:  #FF204E;
 
+.list1 {
+    position: relative;
 }
-a:hover{
-    background-color: #A0153E;
-    color: #000000;
-    cursor: pointer;
+
+.list1 a {
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    color: var(--text-primary);
+    font-weight: 500;
+    font-size: 0.95rem;
+    text-transform: capitalize;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
 }
-@media screen and(max-width: 51.0625em){
-    .header{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+
+.list1 a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--accent-color), var(--accent-light));
+    transition: width 0.3s ease;
+}
+
+.list1 a:hover {
+    color: var(--accent-color);
+}
+
+.list1 a:hover::after {
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 1rem 2rem;
+        flex-wrap: wrap;
+    }
+
+    .headerName {
+        font-size: 1.2rem;
+    }
+
+    .list {
         gap: 1rem;
-        
-}
-    
+        flex-basis: 100%;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    .list1 a {
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+    }
 }
